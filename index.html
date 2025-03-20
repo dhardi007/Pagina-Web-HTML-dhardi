@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en, es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera pagina weee b</title>
+<!-- El estilo de la pagina, en este caso la tabla -->
+    <style>
+        table, th, td {
+            border: 2px solid black; 
+        }
+    </style>
+    <!-- en el style defini el border de las lineas de la tabla, PX siendo lo mejor -->
+</head>
+
+<body>
+
+    <!-- TABLAS -->
+<table style="width: 500px">
+<!-- cabeza de la tabla -->
+    </thead>
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+    <thead>
+        <!-- cuerpo de la tabla -->
+    <tbody>
+        <tr>
+            <td>Hola beats</td>
+            <td>Gratis</td>
+        </tr>
+        
+        <tr>
+            <td>Chancho</td>
+            <td>19,90$</td>
+        </tr>
+        
+        <tr>
+            <td>Chancho triste</td>
+            <td>19,90$</td>
+        </tr>
+    </tbody>
+<!-- el pie de la tabla -->
+    <tfoot>
+        <td></td>
+        <td>Total: 49.80$</td>
+    </tfoot>
+</table>
+
+
+
+
+<br>
+<br>
+
+<!-- TIPO DE LISTAS -->
+
+<!-- lista no ordenada -->
+<ul>
+    <li value="50">Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+</ul>
+
+<!-- lista ordenada  -->
+
+<ol>
+    <li value="50">Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <br>
+                    <ol>
+                        <li style="list-style-type: lower-roman">Elemento 1</li>
+                        <li style="list-style-type: lower-alpha">Elemento 2</li>
+                        <li style="list-style-type: lower-alpha">Elemento 3</li>
+                    </ol>
+</ol>
+
+
+<br>
+<br>
+<br>
+
+<!--ESTO ES UN FORMULARIO CON BOTONES >:) -->
+
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <input value="feliz" type="text" id="nombre" placeholder="Asigna.."/>
+        <input type="file"/>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" placeholder="El apellido..."/>
+        
+        <br>
+
+        <label for="comentarios">Comentario</label>
+        <textarea cols="50" rows="10" name="comentario" id="comentario" placeholder="Deje sus comentarios :D">El atributo VALOR no funciona como en textarea por su nombre, solo en input si</textarea>
+        <br>
+    <!-- Este es tipo sumbit/aceptar, no tiene atributos, poco personalizable. -->
+        <input type="submit"/>
+
+        <!-- button en este caso es mejor -->
+        <button type="button">    <img src="img/cafesinnnn.png" alt="cafe" width="auto" height="auto">
+        Tipo Boton alternativa a sumbit
+        </button>
+    
+    </form>
+
+    <!-- texto pa fracas -->
+ 
+        <h1>Mi primer heading</h1>
+        <h2>Mi segundo heading</h2>
+        <h3>Mi 3ro heading</h3>
+        <h4>Mi cuarto heading</h4>
+        <h5>Mi quinto heading</h5>
+        <h6>SIGAN VIENDO</h6>
+    <hr>
+        <h2 id="titulo">Chanchito felipe</h2>
+    <p>
+        Este texto es mucho mas largo<span style="color:blue">y para mostrar</span> 
+        <br>        
+        la etiqueta <span style="color:red">span</span>
+    </p>
+    <!-- Asi se escribe un cometario en html y no aparece en el explorador. 
+     En otros lenguajes se usan los slash // o hasta el hastag etc #-->
+
+     <!-- imagenes we -->
+    <a target="_blank" href="https:www.google.com">ir a google pa'</a>
+
+
+
+
+</body>
+
+<!-- pie de la pagina -->
+
+<footer class="">
+    <p>
+        <!-- enlaces we -->
+    <a href="#titulo" class="">Ir al commienzo</a>
+    <!-- # titulo para enlazar  a un ID, lo mismo en CSS. Para enlazar a una clase . titulo, y lo de abajo es un correo. -->
+    <a href="mailto:dhardi@cincinnatus.edu.do" class="">Contáctame Aquí</a>
+    </p>
+    <p>Copyright 2021</p>
+        
+        
+        
+</footer>
+
+</html>
