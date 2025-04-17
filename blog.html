@@ -26,7 +26,7 @@
         <h1 id="titulo">Pruebas De Grid CSS</h1>
     <!-- el contenedor -->
 </header>
-<div class="contenedor">
+<div class="headline contenedor">
             <!-- [piezas del contenedor] -->
             <div class="parte parte-1">uno</div>
             <div class="parte parte-2">dos</div>
@@ -39,27 +39,26 @@
             <div class="parte parte-9">nueve</div>
 </div>
 
-<div class="contenedor-2">
+    <h1 id="titulo">Pruebas De Flex CSS</h1>
 
-    <div class="parte parte-1">
-        <img src="img/flex-direction.jpg" class="imagenes img-1" alt="atributo> direction / dirección"></div>
-        <div class="parte parte-2">
-            <img src="img/flex-wrap.png"  class="imagenes img-2" alt="atributo> wrap / envolver"></div>
-            <div class="parte parte-3">
-                <img src="img/align-items justify-content-align.png" class="imagenes img-3" alt="atributo> align/ alinear o justicar contenido">
-            </div>
-    </div>
-                <header>
-                    <h1 id="titulo">Blog del MAS GRANDE, Dios</h1>
-                </header>
-    <div>
-        <p>
-            Soy un parrafo dentro un div
-        </p>
-    </div>
+        <div class="headline contenedor-2">
+
+                <div><img src="img/flex-direction.jpg" class="headline imagenes img1" alt="atributo> direction / dirección" onclick="mostrarPreview(this)"></div>
+                <div><img src="img/flex-wrap.png"  class="headline imagenes img2" alt="atributo> wrap / envolver"  onclick="mostrarPreview(this)"></div>
+                <div><img src="img/align-items justify-content-align.png" class="headline imagenes img3" alt="atributo> align/justicar contenido"  onclick="mostrarPreview(this)"></div>
+        </div>
+
+                    <header>
+                        <h1 id="titulo">Blog del MAS GRANDE, Dios</h1>
+                    </header>
+                <div>
+                    <p>
+                        Soy un parrafo dentro un div
+                    </p>
+                </div>
 
 <section>
-    <article>
+    <article class="headline">
         <h2>Titulo de mi post</h2>
         <p>Descripcion de mi post</p>
         <img src="img/115647895_tv064505609.png" alt="pele y maradona" class="vieja-era" width="450px" height="250px">
@@ -67,7 +66,7 @@
         </p>
     </article>
 
-    <article>
+    <article class="headline">
         <h2>Titulo de mi post 2</h2>
         <p>Descripcion de mi post</p>
         <img src="img/655ce67c0d62d.jpg" alt="Messi y cristiano" class="nueva-era">
@@ -75,7 +74,7 @@
         </p>
     </article>
 
-    <article>
+    <article class="headline">
         <h2>Titulo de mi post 3</h2>
         <p>Descripcion de mi post</p>
         <img src="img/dios-1.png" alt="jesucristo" class="dios" width="450px" height="450">
@@ -85,15 +84,30 @@
 
 </section>
 
+    <!-- tu contenido aquí arriba -->
+
 <footer class="">
     <p>
-    <a href="#titulo" class="">Ir al commienzo</a>
-    <a href="mailto:dhardi@cincinnatus.edu.do" class="">Contáctame Aquí</a>
+    <a href="#titulo" class="">Ir al commienzo     |</a>
+    <a href="mailto:dhardi@cincinnatus.edu.do" class="">Contáctame Aquí  |</a>
+    <a href="index.html" class="">Regresar al inicio  </a>
     </p>
-    <p>Copyright 2021</p>
+    <p>Copyright 2025, Cincinnatus, @dhardi</p>
         
         
         
 </footer>
+
+<!-- scroll reveal   -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- revelar contenido scrolleando, bajando: -->
+<!-- https://scrollrevealjs.org/guide/customization.html -->
+<script>
+    ScrollReveal({ reset: true });
+</script>
+
+<script src="index.js"></script> <!-- Aquí va tu JavaScript -->
+
 </body>
 </html>
