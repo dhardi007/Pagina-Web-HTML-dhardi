@@ -9,6 +9,13 @@ body {
 img {
     cursor: pointer
 }
+
+.cone {
+
+        margin: auto 10px;
+    
+}
+
 /* FONT AWESOME ESTILOS */
 .imagen-fa {
     width: 40rem;

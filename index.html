@@ -26,7 +26,7 @@
 </HEADER>
 
     <!-- TABLAS -->
-<table style="width: 500px">
+<table style="width: 500px" class="headline">
 <!-- cabeza de la tabla -->
     </thead>
         <tr>
@@ -76,7 +76,7 @@
 
 <!-- lista ordenada  -->
 
-<ol>
+<ol class="headline">
     <li value="50">Elemento 1</li>
     <li>Elemento 2</li>
     <li>Elemento 3</li>
@@ -96,7 +96,7 @@
 
 <!--ESTO ES UN FORMULARIO CON BOTONES >:) -->
 
-    <form action="/formulario" method="POST">
+    <form action="/formulario" method="POST" class="headline">
         <label for="nombre">Nombre</label>
         <input value="feliz" type="text" id="nombre" placeholder="Asigna.."/>
         <input type="file"/>
@@ -130,7 +130,7 @@
     <hr>
         <h2 id="titulo">Chanchito felipe</h2>
     <p>
-        Este texto es mucho mas largo<span style="color:blue">y para mostrar</span> 
+        Este texto es mucho mas largo<span style="color:blue" class="headline">y para mostrar</span> 
         <br>        
         la etiqueta <span style="color:red">span</span>
     </p>
@@ -142,9 +142,6 @@
 
 
 
-
-</body>
-
 <!-- pie de la pagina -->
 
 <footer class="">
@@ -154,10 +151,25 @@
     <!-- # titulo para enlazar  a un ID, lo mismo en CSS. Para enlazar a una clase . titulo, y lo de abajo es un correo. -->
     <a href="mailto:dhardi@cincinnatus.edu.do" class="">Contáctame Aquí</a>
     </p>
-    <p>Copyright 2021</p>
+    <p>Copyright 2025</p>
         
         
         
 </footer>
+
+<!-- 1- scroll reveal  -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- 2- true: revelar contenido scrolleando, bajando: -->
+<!-- https://scrollrevealjs.org/guide/customization.html -->
+<script>
+    ScrollReveal({ reset: true });
+</script>
+
+<!-- 3 - final de scroll reveal -->
+<script src="index.js"></script> <!-- Aquí va tu JavaScript -->
+
+
+</body>
 
 </html>
