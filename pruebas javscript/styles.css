@@ -71,7 +71,7 @@ a {
 }
 
 a:hover {
-    color:aliceblue;
+    color:rgb(148, 169, 187);
 }
 header, #titulo {
     position: relative;
@@ -86,7 +86,7 @@ footer {
 }
 
 #titulo:hover {
-    color:rgb(99, 213, 213);
+    color:rgb(153, 122, 161);
 }
 
 @media screen and (max-width: 1500px) {
