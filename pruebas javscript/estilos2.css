@@ -1,0 +1,62 @@
+
+.cone {
+
+        margin: auto 10px;
+    
+}
+
+/* FONT AWESOME ESTILOS */
+.imagen-fa {
+    width: 40rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+      
+
+}
+
+.bucle-img {
+    
+    width: 15rem;
+    height: auto;
+    display: block;
+    margin: 0 300px;
+    
+      
+}
+
+.condiC-img {
+    width: 25rem;
+    height: auto;
+    display: block;
+    margin: 0 300px;
+    
+}
+
+#h3-bucle {
+    display: block;
+    margin: 15px 380px;
+}
+
+
+.fa-baby {
+    font-size: 70px;
+    color: #009688;
+    margin: 10px;
+    display: block;
+  }
+/* FONT AWESOME ESTILOS */
+
+h1, h3, h4 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style:italic;     
+    font-variation-settings: 
+        "wdth" 100;
+}
+
+
+#ilustrar {
+    text-align: center; 
+}
