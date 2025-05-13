@@ -24,7 +24,7 @@ var num2 = 3;
 var resultado = num1 * num2;/* o puedes usar / */
 console.log(resultado)
 
-// LOS OPERADORES CLAVES SON:
+/* LOS OPERADORES CLAVES SON: */
 // al usar > mayor que 
 //  al usar < menor que
 // al usar <= menor o igual
@@ -32,6 +32,9 @@ console.log(resultado)
 //  == igual a
 //  != distinto a (escrito como ! = )
 
+/* MAS OPERADORES LOGICOS */
+// && = CUANDO CUMPLE TODAS LAS CONDICIONES TRUE, mismo valores
+// || = CUANDO AL MENOS CUMPLE 1 CONDICION TRUE
 /* tambien pueden ser considerados como booleanos*/
 
 var resultado = num1 != num2;// si el valor es distinto volvera true
