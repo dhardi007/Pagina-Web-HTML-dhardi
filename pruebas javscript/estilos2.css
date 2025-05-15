@@ -5,40 +5,6 @@
     
 }
 
-/* FONT AWESOME ESTILOS */
-.imagen-fa {
-    width: 40rem;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    
-      
-
-}
-
-.bucle-img {
-    
-    width: 15rem;
-    height: auto;
-    display: block;
-    margin: 0 300px;
-    
-      
-}
-
-.condiC-img {
-    width: 25rem;
-    height: auto;
-    display: block;
-    margin: 0 300px;
-    
-}
-
-#h3-bucle {
-    display: block;
-    margin: 15px 380px;
-}
-
 
 .fa-baby {
     font-size: 70px;
@@ -54,9 +20,59 @@ h1, h3, h4 {
     font-style:italic;     
     font-variation-settings: 
         "wdth" 100;
+        text-align: center;
 }
 
 
-#ilustrar {
-    text-align: center; 
-}
+@media screen and (max-width: 1500px) {
+
+    .contenedor-3 {   
+        max-width: 1100px;
+        margin: 30px auto;
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        color: black;
+        
+    }
+      
+    .imageness:hover {
+    background-color: rgb(210, 192, 227);
+    background-image: url('../img/cafesinnnn.png'); /* Asegúrate de tener una imagen */
+    background-size: 50px 50px; /* Cambia el tamaño del fondo de imagen */
+    background-repeat: no-repeat; /* Opcional: evita que se repita la imagen */
+    }
+
+
+    /* FONT AWESOME ESTILOS */
+    .imagen-fa {
+        width: 600px;
+        height: auto;
+        padding: 10px;
+        margin: 10px 10px;
+        cursor: pointer;
+    }
+
+    .bucle-img {
+        
+            width: 300px;
+            height: auto;
+            padding: 10px;
+            margin: 10px 10px;
+            cursor: pointer;
+    }
+
+    .condiC-img {
+            width: 450px;
+            height: auto;
+            padding: 10px;
+            margin: 10px 10px;
+            cursor: pointer;
+    }
+
+    #ilustrar {
+        color:rgb(167, 157, 142);
+    }
+};

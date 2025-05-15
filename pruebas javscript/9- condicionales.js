@@ -76,20 +76,22 @@ else{
    console.log(`${a} es mayor a: ${b}`)
 };
 
-// EJEMPLO #6 - cambio switch MUY COMPLEJO
-let curso = 'javascript';
+// EJEMPLO #6 - cambio switch/opciones fácil
+let curso = 'python';/* es el filtro de la opciones */
 
 switch (curso) {
+   /* las keys son opciones */
    case 'java':
       console.log("java");
-      break;
+      break;/* corta la opcion, inicia otro */
    case 'python':
       console.log("python3");
       break;
    case 'javascript':
       console.log('javascript');
       break;
+      /* default es la opcion de salida, no disponible */
    default:
-      console.log('no disponible');
+      console.log('no disponible');/* si usaras PHP en let curso saldria esto */
       break;
 }
