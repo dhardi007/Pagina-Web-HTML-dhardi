@@ -1,6 +1,7 @@
 // un bloque de codigo que se ejecuta cuando lo llamen.
 
-// funcion sencilla, suma
+
+// EJEMPLO #0 FUNCION CON ARGUMENTO (parametro), suma sencilla
 function suma(a,b) {/* en los () va el parametro/argumento, en este caso a, b */
     var sum = a*b;/* variable DECLARANDO una multiplicacion */
     console.log('la suma es: '+ sum)/* concatenamos */
@@ -42,7 +43,7 @@ console.log(resta(300,230));/* ingresamos los 2 numeros*/
 
 // ambos imprimen 70
 
-// #otro ejemplo.1# imprimir la funcion sin parametros, con return
+// #otro ejemplo.1# imprimir la funcion sin parametros, con return en LO INTERNO
 var nombre = function(){/* no tiene parametro, ni nombre */
     return "juan";/* pero devuelve juan */
 }
@@ -56,7 +57,7 @@ console.log(nombre());/* llamas a la funcion sin parametro, con () de la misma f
 
 // EJEMPLO #3 FUNCIONES ANIDADAS
 
-function operacion() {
+function operacion() {/* sin parametros, lo hacemos interno */
     const PI = 3.14;
     function area(radio) {
         var area = PI * radio * radio;
