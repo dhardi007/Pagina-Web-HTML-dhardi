@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera pagina weee b</title>
+    <title>Calculadora</title>
 <!-- El estilo de la pagina, en este caso la tabla -->
  
 <link rel="stylesheet" href="../styles.css"><!-- se carga 1ro -->
@@ -30,17 +30,49 @@
     
     <h1 id="titulo">CALCULADORA PROYECTO</h1>
 </HEADER>
+<br>
+<br>
+<br>
+
 <!-- calculadora -->
+    <center><div class="calculadora">
+        <form name="calculadora" id="calculadora">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="resultado" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="agregarNumero('7')">7</button></td>
+                    <td><button type="button" onclick="agregarNumero('8')">8</button></td>
+                    <td><button type="button" onclick="agregarNumero('9')">9</button></td>
+                    <td><button type="button" onclick="operacion('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="agregarNumero('4')">4</button></td>
+                    <td><button type="button" onclick="agregarNumero('5')">5</button></td>
+                    <td><button type="button" onclick="agregarNumero('6')">6</button></td>
+                    <td><button type="button" onclick="operacion('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="agregarNumero('1')">1</button></td>
+                    <td><button type="button" onclick="agregarNumero('2')">2</button></td>
+                    <td><button type="button" onclick="agregarNumero('3')">3</button></td>
+                    <td><button type="button" onclick="operacion('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="reset">C</button></td>
+                    <td><button type="button" onclick="agregarNumero('0')">0</button></td>
+                    <td><button type="submit" onclick="operacion('+')">+</button></td>
+                </tr>
+
+            </table>
+
+        </form>
+    </div></center>
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -57,14 +89,7 @@
 <br>
 <hr>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <!-- pie de la pagina -->
 <footer class="">
     <!-- primer parrafo -->
@@ -82,7 +107,7 @@
          
 </footer>
 <!-- aqui cambiamos segun el script con las tematicas: pruebas, variables, tipo datos etc -->
-<script src="12- metodos.js"></script>
+<script src="call1.js"></script>
 
 <!-- 1- scroll reveal  -->
 <script src="https://unpkg.com/scrollreveal"></script>
