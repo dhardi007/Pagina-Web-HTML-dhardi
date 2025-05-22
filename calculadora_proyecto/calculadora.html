@@ -35,40 +35,40 @@
 <br>
 
 <!-- calculadora -->
-    <center><div class="calculadora">
+    <center><div class="micalculadora">
         <form name="calculadora" id="calculadora">
-            <table>
-                <tr>
-                    <td colspan="4">
-                        <input type="text" id="resultado" disabled>
-                    </td>
-                </tr>
-                <tr>
-                    <td><button type="button" onclick="agregarNumero('7')">7</button></td>
-                    <td><button type="button" onclick="agregarNumero('8')">8</button></td>
-                    <td><button type="button" onclick="agregarNumero('9')">9</button></td>
-                    <td><button type="button" onclick="operacion('/')">/</button></td>
-                </tr>
-                <tr>
-                    <td><button type="button" onclick="agregarNumero('4')">4</button></td>
-                    <td><button type="button" onclick="agregarNumero('5')">5</button></td>
-                    <td><button type="button" onclick="agregarNumero('6')">6</button></td>
-                    <td><button type="button" onclick="operacion('*')">*</button></td>
-                </tr>
-                <tr>
-                    <td><button type="button" onclick="agregarNumero('1')">1</button></td>
-                    <td><button type="button" onclick="agregarNumero('2')">2</button></td>
-                    <td><button type="button" onclick="agregarNumero('3')">3</button></td>
-                    <td><button type="button" onclick="operacion('-')">-</button></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><button type="reset">C</button></td>
-                    <td><button type="button" onclick="agregarNumero('0')">0</button></td>
-                    <td><button type="submit" onclick="operacion('+')">+</button></td>
-                </tr>
+            <input type="text" name="display" id="display">
+                <div>
+                    <input type="button" id="uno" value="1" onclick="valor(document.getElementById('uno').value)">
+                    <input type="button" id="dos" value="2" onclick="valor(document.getElementById('dos').value)">
+                    <input type="button" id="tres" value="3" onclick="valor(document.getElementById('tres').value)">
+                    <input type="button" id="suma" value="+" onclick="valor(document.getElementById('suma').value)">
+                </div>
 
-            </table>
+                <div>
+                    <input type="button" id="cuatro" value="4" onclick="valor(document.getElementById('cuatro').value)">
+                    <input type="button" id="cinco" value="5" onclick="valor(document.getElementById('cinco').value)">
+                    <input type="button" id="seis" value="6" onclick="valor(document.getElementById('seis').value)">
+                    <input type="button" id="resta" value="-" onclick="valor(document.getElementById('resta').value)">
+                </div>
+                <div>
+                    <input type="button" id="siete" value="7" onclick="valor(document.getElementById('siete').value)">
+                    <input type="button" id="ocho" value="8" onclick="valor(document.getElementById('ocho').value)">
+                    <input type="button" id="nueve" value="9" onclick="valor(document.getElementById('nueve').value)">
+                    <input type="button" id="mult" value="*" onclick="valor(document.getElementById('mult').value)">
+                </div>
 
+                <div>  
+                    <input type="button" id="cero" value="0" onclick="valor(document.getElementById('cero').value)">
+                    <input type="button" id="decimal" value="." onclick="valor(document.getElementById('decimal').value)">
+                    <input type="button" id="div" value="/" onclick="valor(document.getElementById('div').value)">
+                    <input type="button" id="porc" value="%" onclick="valor(document.getElementById('porc').value)">
+                </div>
+                
+                <div class="resultado">
+                    <input type="button" id="igual" value="=" onclick="cal_resultado()">
+                    <input type="button" id="borrar" value="" onclick="borrardisplay(document.getElementById('borrar').value)">
+                </div>
         </form>
     </div></center>
 
