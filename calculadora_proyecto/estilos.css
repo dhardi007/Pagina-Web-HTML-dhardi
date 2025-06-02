@@ -36,3 +36,50 @@ box-sizing: border-box;
 border-radius: 4px; 
 border: 2px solid #777;
 }
+
+div.resultado input, div.resultado button{
+    height: 40px;
+    width: 85px;
+    margin: 8px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+div.resultado button {
+    background-color:rgb(184, 63, 63);
+    color:white;
+    border: 1px solid #5e252d;
+}
+
+
+div.resultado input {
+    background-color: #c95d36;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 1px solid rgb(85, 57, 35);
+}
+
+div.resultado input:hover {
+    background-color: #dd6d44;
+    color: white;
+}
+
+div.resultado button:hover {
+    background-color: rgb(228, 74, 74);
+    color: white;
+    
+}
+
+#suma, #resta, #mult, #div, #porc{
+background-color: #45857c;
+color:white;
+border: 1px solid #777;
+font-size: 16px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+#suma:hover, #resta:hover, #mult:hover, #div:hover, #porc:hover {
+    background-color: #579c93;
+    color: rgb(82, 78, 78);
+}
