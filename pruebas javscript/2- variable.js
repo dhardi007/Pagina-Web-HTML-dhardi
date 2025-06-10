@@ -19,8 +19,11 @@ var suma = x+y;
 
 // concatenar=unir palabras/variables. El espacio en + es clave.
 var x = 'diego'+'  '+'samuel';
+var x = 'diego' + 'samuel';/* concatenar mas facil */
 
-// console.log(x);
+
+
+console.log(x);
 
 // EJEMPLO 4
 

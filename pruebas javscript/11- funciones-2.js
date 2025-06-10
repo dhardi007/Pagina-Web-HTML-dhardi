@@ -6,7 +6,7 @@
 function area() {/* no lleva parametro, por lo el cliente asigna el valor */
 
     const PI = 3.14;
-    var radio = document.getElementById('radio').value
+    var radio = document.getElementById('radio').value/* value muy utilizado en distintos elementos como input radio etc para obtener el valor */
     var resultado = PI * radio * radio;
     document.getElementById('resultado').value = 
     resultado;
@@ -26,9 +26,9 @@ var z = eval("a + 8");  // z = 18 (evalúa "10 + 8")
 var respt = a + z;      // respt = 28 (10 + 18)
 console.log(respt);     // Imprime 28 en la consola
 
-/* pasefloat */
-
-var a = parseFloat("10");  // Convierte el string "10" a número
+/* parsefloat */
+/* parse significa pasar o convertir parcero */
+var a = parseFloat("10");  // metodo Convierte el string "10" a número
 var b = parseFloat("20curso");  // Convierte el string "20" a número
 var c = parseFloat("10curso");  // Convierte el string "10curso" a número
 
@@ -38,5 +38,5 @@ console.log(c);  // Imprime NaN (Not a Number) porque "curso" no es un número
 // 1 enero de 1970;
 
 var dato = "1 january, 1970 1:30 PM";
-var resultado = Date.parse(dato);
+var resultado = Date.parse(dato);/* es otro methodo que almacena y lo convierte en fechas*/
 console.log();  // Imprime el timestamp correspondiente a la fecha

@@ -8,6 +8,7 @@ console.log(numeros);
 console.log(estudiantes [2]);/* se selecciono la posicion del array, 0 siendo el 1er valor
  */
 
+
 console.log(estudiantes.sort());/* lo ordena alfabeticamente
  */
 // podrias usar el parametro .lenght para contar
@@ -17,6 +18,8 @@ console.log(estudiantes.shift());/* elimina el 1er valor
 
 console.log(estudiantes.pop());/* elimina el ultimo valor
  */
+
+
 
 // por eso al verificar la consola, solo muestra JOSE
 
@@ -31,6 +34,8 @@ console.log(estudiantes2.indexOf("sara"));/* al ingresar sara, el valor no exist
 console.log(estudiantes2.unshift("sara"));/* de esta forma agregamos el valor a los arrays */
 console.log(estudiantes2)/* seguido de otro console.log para mostrar */
 
+
+
 // EJEMPLOS 3
 
 var grupo_a = [1,2,3];
@@ -38,3 +43,8 @@ var grupo_b = [4,5,6];
 
 console.log(grupo_a.concat(grupo_b));/* recuerda que cont significa concatenar = unir
 osea que unira los 2 grupos */
+
+//  metodos: indexof, unshift, pop, shift, sort, concat son METODOS de los arrays
+// un metodo es una funcion default que se aplica a un objeto, en este caso al array
+
+// lo que mas tienes que aprender son los metodos en general, ya que son muy utiles y muy usados en javascript

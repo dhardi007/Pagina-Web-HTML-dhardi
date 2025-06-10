@@ -1,4 +1,10 @@
-// METODOS, similar a funciones, pero aplicado a objetos/o arrays
+// METODOS, similar a funciones, pero aplicado a objetos y no necesariamente a arrays
+
+// y si, anteriormente viste el uso de muchos mas metodos como: parseFloat, eval, date.parse (en funciones-11.js)
+                                    // indexOf, unshift, pop, shift, sort, concat, lenght, splice (en arrays-6.js)
+                                    
+// y ahora veremos metodos de arrays, que son muy utiles y muy usados en javascript
+
 
 /* recordatorio: => arrow function, son usadas en casi todas las funciones y metodos */
 /* value: representa cada valor en el array */
