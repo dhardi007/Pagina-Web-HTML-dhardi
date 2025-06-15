@@ -1,0 +1,18 @@
+
+{
+    "propiedad": "valor",
+    "property": true,
+    "no-se-permiten-comentarios-en-json": "esto es un comentario",
+    "id-number": 1,
+
+
+  "nombre-string": "Juan",
+  "edad-number": 30,
+  "esEstudiante-booleano": false,
+  "hobbies-esto-es-un-objeto": ["leer", "futbol", "programar"],
+  "direccion/esto-es-un-arreglo-array": {
+    "calle": "Calle Falsa 123",
+    "ciudad": "Ciudad Ejemplo",
+    "pais": "NuncaJamás"
+  }
+}
