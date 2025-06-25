@@ -1,0 +1,220 @@
+/* estilos de la calculadora */
+
+body{ 
+font-family: "Roboto", sans-serif, monospace;
+text-align: center; 
+justify-content: center; 
+align-items: center; 
+min-height: 100vh; 
+}
+
+body div.micalculadora{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    margin: 0 auto;
+    background-color: #0b464f;
+    border-radius: 10px;
+}
+
+div input[type='button'] {
+    width: 40px;
+    height: 40px;
+    margin: 3px 0;
+}
+
+div input[  type ='text'] { 
+height: 40px; 
+width: 200px; 
+background-color: #F2EBD5; 
+color: black; 
+padding: 12px 20px; 
+margin-top: 40px; 
+margin-bottom: 20px; 
+box-sizing: border-box; 
+border-radius: 4px; 
+border: 2px solid #777;
+}
+
+div.resultado input, div.resultado button{
+    height: 40px;
+    width: 85px;
+    margin: 8px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+div.resultado button {
+    background-color:rgb(184, 63, 63);
+    color:white;
+    border: 1px solid #5e252d;
+}
+
+
+div.resultado input {
+    background-color: #c95d36;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 1px solid rgb(85, 57, 35);
+}
+
+div.resultado input:hover {
+    background-color: #dd6d44;
+    color: white;
+}
+
+div.resultado button:hover {
+    background-color: rgb(228, 74, 74);
+    color: white;
+    
+}
+
+#suma, #resta, #mult, #div, #porc{
+background-color: #45857c;
+color:white;
+border: 1px solid #777;
+font-size: 16px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+#suma:hover, #resta:hover, #mult:hover, #div:hover, #porc:hover {
+    background-color: #579c93;
+    color: rgb(82, 78, 78);
+}
+
+/* ----- TODO LIST ----- */
+@media (prefers-reduced-motion: reduce) {
+    .form-control {
+        transition: none;
+    }
+}
+
+/* formulario */
+/* input Ingrese tarea */
+.form-control {
+    display: block;
+    width: 50%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* button Agregar */
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-block {
+    display: block;
+    width: 52%;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+    }
+}
+.btn {
+    font-family: "Roboto", sans-serif;
+    margin: 10px auto;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* NO HAY tareas */
+.alert-dark {
+    color: #1b1e21;
+    background-color: #d6d8d9;
+    border-color: #c6c8ca;
+}
+
+.alert {
+    font-family: monospace, "Roboto", sans-serif;
+    position: relative;
+    width: 48%;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+/* fondo piel */
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+
+}
+
+/* colores iconos... */
+
+/* retornar */
+
+/* validar */
+.text-success {
+    color: #28a745 !important;
+}
+/* eliminar */
+.text-danger {
+    color: #dc3545 !important;
+}
+
+fa, .fas {
+    font-weight: 900;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+
+/* Si HAY tareas */
+
+/* iconos de lista de tarea */
+
+/* retornar */
+.fa-undo-alt:before {
+    content: "\f2ea";
+}
+
+/* eliminar */
+.fa-minus-circle:before {
+    content: "\f056";
+}
+
+/* validar */
+.fa-check-circle:before {
+    content: "\f058";
+}
