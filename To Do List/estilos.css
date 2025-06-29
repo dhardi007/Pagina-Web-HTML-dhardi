@@ -17,6 +17,10 @@ body div.micalculadora{
     background-color: #0b464f;
     border-radius: 10px;
 }
+/* tITULO */
+h1 {
+    font-family:  "Underdog", system-ui, "Roboto", sans-serif, 'Courier New', Courier, monospace;
+}
 
 div input[type='button'] {
     width: 40px;
@@ -94,8 +98,7 @@ font-family: 'Courier New', Courier, monospace;
 /* formulario */
 /* input Ingrese tarea */
 .form-control {
-    display: block;
-    width: 50%;
+    width: 100%;
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -106,7 +109,15 @@ font-family: 'Courier New', Courier, monospace;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.mb-2, .my-2 {
+    margin-bottom: .5rem!important;
+}
+
+.mt-2, .my-2 {
+    margin-top: .5rem!important;
 }
 
 /* button Agregar */
@@ -116,7 +127,7 @@ font-family: 'Courier New', Courier, monospace;
 
 .btn-block {
     display: block;
-    width: 52%;
+    width: 100%;
 }
 .btn-primary {
     color: #fff;
@@ -155,21 +166,30 @@ font-family: 'Courier New', Courier, monospace;
     border-color: #c6c8ca;
 }
 
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex !important
+;
+}
+.alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+
 .alert {
-    font-family: monospace, "Roboto", sans-serif;
     position: relative;
-    width: 48%;
     padding: .75rem 1.25rem;
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: .25rem;
 }
+
 /* fondo piel */
 .alert-warning {
     color: #856404;
     background-color: #fff3cd;
     border-color: #ffeeba;
-
 }
 
 /* colores iconos... */
@@ -217,4 +237,17 @@ fa, .fas {
 /* validar */
 .fa-check-circle:before {
     content: "\f058";
+}
+
+
+/* Justificar contenido - centrar presets */
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center !important;
+}
+
+.justify-content-between {
+-ms-flex-pack: justify!important;
+justify-content: space-between !important;
 }

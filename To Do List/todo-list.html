@@ -22,49 +22,50 @@
     <!-- en el style defini el border de las lineas de la tabla, PX siendo lo mejor -->
 </head>
 
-<body>
-
 <HEADER>    
     <h1 id="titulo"><a href="../index.html">REGRESAR AL INDEX</a></h1>
     
     <h1 id="titulo">LISTA DE TAREAS</h1>
 </HEADER>
-<br>
-<br>
-<br>
+
+
+<hr>
+
+
+<body class="vsc-initialized" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJMSU5LRURJTiI6ImRpc2FibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMC4yNCIsInNjb3JlIjoyMDAyNH1d" __processed_4816a530-2084-46d7-ba71-b097c7188537__="true">
+    <div class="container" bis_skin_checked="1">
+        <h1 class="text-center my-5">ToDo App</h1>
 
 <!-- toDoList - esto es camelcase remember -->
-<form id= 'formulario'>
-    <center>
-        <input type="text" placeholder="Ingrese tarea" class="form-control my-2" id="input" autofocus="">
-        <button class="btn btn-block btn-primary" type="submit">Agregar</button>
-    </center>
-</form>
 
-
-
+        <form id="formulario" class="headline">
+            <input type="text" placeholder="Ingrese tarea" class="form-control my-2" id="input" autofocus="">
+            <button class="btn btn-block btn-primary" type="submit">Agregar</button>
+        </form>
 <!-- lista de tareas con iconos -->
-<div id="lista-tareas" class="mt-3" bis_skin_checked="1">
+        <div id="lista-tareas" class="mt-3" bis_skin_checked="1">
     <!-- NO hay tareas -->
-    <center>
-        <div class="alert alert-dark text-center" bis_skin_checked="1">
-            No hay tareas pendientes 😍
+
+        <div class="alert alert-primary d-flex justify-content-between align-items-center" bis_skin_checked="1">
+            <p class="m-0" style="text-decoration: line-through;">gg</p>
+            <h3 class="m-0">
+    <!-- SI hay tareas -->
+                <i class="fas fa-undo-alt text-success" role="button" data-id="1751179184747"></i>
+                <i class="fas fa-minus-circle text-danger" role="button" data-id="1751179184747"></i>
+            </h3>
         </div>
-    </center>
-        
-
-    <!-- si hay tareas -->
-        <center>
-            <div class="alert alert-warning d-flex justify-content-between align-items-center" bis_skin_checked="1">
-                <p class="m-0">Hacer calculadora</p>
-                <h3 class="m-0">
-                    <i class="fas fa-check-circle text-success" role="button" data-id="1750874521320"></i>
-                    <i class="fas fa-minus-circle text-danger" role="button" data-id="1750874521320"></i>
-                </h3>
-            </div>
-        </center>
-</div>
-
+    </div>
+    </div>
+    
+    <template id="template">
+        <div class="alert alert-warning d-flex justify-content-between align-items-center">
+            <p class="m-0">Tarea #1</p>
+            <h3 class="m-0">
+                <i class="fas fa-check-circle text-success" role="button"></i>
+                <i class="fas fa-minus-circle text-danger" role="button"></i>
+            </h3>
+        </div>
+    </template>
 
 <br>
 <br>
@@ -80,7 +81,6 @@
 <br>
 <br>
 <br>
-<hr>
 <br>
 
 <!-- pie de la pagina -->
@@ -100,7 +100,8 @@
          
 </footer>
 <!-- aqui cambiamos segun el script con las tematicas: pruebas, variables, tipo datos etc -->
-<script src="app.js"></script>
+    <script src="app.js"></script>
+
 
 <!-- 1- scroll reveal  -->
 <script src="https://unpkg.com/scrollreveal"></script>
