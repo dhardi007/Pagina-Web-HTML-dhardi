@@ -1,0 +1,27 @@
+¿IMPORTAR Y EXPORTAR?
+///////////////////////////////
+
+1. Para exportar la funcion hay que tomar en cuenta:
+
+- el index.js al linkear al archivo.js debe de tener el type="module"
+- debes de tener un package.json con "type": "module" para que node.js lo interprete como un módulo ES6
+- la función debe ser exportada con export default function daysToXmas() { ... }
+- y luego podras importarla en otro archivo con import daysToXmas from './dayToXmas.js'; */
+
+2. Exportar: En el dayToXmas.js cree la funcion a exportar ej:
+
+export default function daysToXmas(date = new Date()) {
+...la-funcion}
+
+
+
+2. Import: En el app.js simplemente llame a la funcion con import
+
+import daysToXmas from './dayToXmas.js'
+
+console.log("\n→ [LO MISMO IMPORTADO]\n Ejemplo con fecha definida como base:");
+
+
+/////////////////////////////////
+Asi de sencillo, pero lo utilize para algo muy secillo como la conosla, pero seguramente
+puedes reescribir cierta parte del codigo y es bastante práctico para tomarlo como base.
