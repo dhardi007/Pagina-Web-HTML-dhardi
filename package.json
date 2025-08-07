@@ -1,3 +1,31 @@
 {
-  "type": "module"
+  "type": "module",
+  "name": "pagina-web-html-dhardi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhardi007/Pagina-Web-HTML-dhardi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhardi007/Pagina-Web-HTML-dhardi/issues"
+  },
+  "homepage": "https://github.com/dhardi007/Pagina-Web-HTML-dhardi#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.1.11"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "postcss-preset-env": "^10.2.4"
+  }
 }
