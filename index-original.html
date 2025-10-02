@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en, es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera pagina weee b</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/tailwind.output.css" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <script src="./assets/js/init-alpine.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      defer
+    ></script>
+    <script src="./assets/js/charts-lines.js" defer></script>
+    <script src="./assets/js/charts-pie.js" defer></script>
+
+    <style>
+        table, th, td {
+            border: 2px solid rgb(117, 83, 126);
+        }
+    </style>
+</head>
+
+<!-- Se ha añadido la clase 'text-center' para centrar todo el texto horizontalmente. -->
+<!-- Se ha eliminado el estilo en línea redundante, ya que la clase 'bg-blue-950' ya se encarga del color de fondo. -->
+<body class="bg-blue-950 text-white text-center"  style="background-color: #1c181c;"  >
+
+
+    <!-- Se ha mantenido la clase 'container mx-auto p-8' para centrar el contenedor y mantener el espaciado. -->
+    <div class="container mx-auto p-8">
+
+        <HEADER>
+            <p>
+                Elige un camino, <span style="color:rgb(88, 88, 163)" class="headline">uno, </span>
+                <br>
+                o si prefieres, <span style="color:rgb(187, 99, 99)">dos.</span>
+            </p>
+
+            <h1 id="titulo"><a href="blog.html"><span style="color:rgb(88, 88, 163)">1-</span> IR HACIA EL BLOG CSS</a></h1>
+            <h1 id="titulo"><a href="pruebas javscript/pruebas.html"><span style="color:rgb(187, 99, 99)">2-</span> PRUEBAS JAVASCRIPT</a></h1>
+            <h1 id="titulo"><a href="calculadora_proyecto/calculadora.html"><span style="color:rgb(187, 99, 99)">3-</span> CALCULADORA PROYECTO</a></h1>
+            <h1 id="titulo"><a href="To Do List/todo-list.html"><span style="color:rgb(187, 99, 99)">4-</span> TO DO LIST - Lista de Tarea</a></h1>
+        </HEADER>
+        <br><br>
+        <table style="width: 500px" class="headline mx-auto">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hola beats</td>
+                    <td>Gratis</td>
+                </tr>
+                <tr>
+                    <td>Chancho</td>
+                    <td>19,90$</td>
+                </tr>
+                <tr>
+                    <td>Chancho triste</td>
+                    <td>19,90$</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td>Total: 49.80$</td>
+            </tfoot>
+        </table>
+
+        <br><br>
+
+        <ul>
+            <li value="50">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+
+        <ol class="headline">
+            <li value="50">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <br>
+            <ol>
+                <li style="list-style-type: lower-roman">Elemento 1</li>
+                <li style="list-style-type: lower-alpha">Elemento 2</li>
+                <li style="list-style-type: lower-alpha">Elemento 3</li>
+            </ol>
+        </ol>
+
+
+        <br><br><br>
+
+        <form action="/formulario" method="POST" class="w-full max-w-lg p-4 bg-purple-200 rounded-lg shadow-md dark:bg-purple-200 mx-auto">
+            <div class="mb-4">
+                <label for="nombre" class="block text-sm font-medium text-purple-700 dark:text-gray-300">
+                    Nombre
+                </label>
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Asigna.."
+                    value="feliz"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 dark:bg-purple-800 dark:border-gray-600 dark:text-gray-200"
+                />
+            </div>
+
+            <div class="mb-4">
+                <input
+                    type="file"
+                    class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-purple-50 file:text-purple-700 hover:file:bg-purple-100"
+                />
+            </div>
+
+            <div class="mb-4">
+                <label for="apellido" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                    Apellido
+                </label>
+                <input
+                    type="text"
+                    id="apellido"
+                    placeholder="El apellido..."
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 dark:bg-purple-800 dark:border-gray-600 dark:text-gray-200"
+                />
+            </div>
+
+            <div class="mb-6">
+                <label for="comentario" class="block text-sm font-medium text-purple-700 dark:text-gray-300">
+                    Comentario
+                </label>
+                <textarea
+                    id="comentario"
+                    name="comentario"
+                    rows="5"
+                    placeholder="Deje sus comentarios :D"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 dark:bg-purple-800 dark:border-gray-600 dark:text-gray-200"
+                >El atributo VALOR no funciona como en textarea por su nombre, solo en input si</textarea>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+                    Enviar
+                </button>
+                <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-purple-700 bg-purple-100 hover:bg-purple-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+                    <img src="img/cafesinnnn.png" alt="cafe" class="w-5 h-5 mr-2">
+                    Tipo Botón alternativa a submit
+                </button>
+            </div>
+        </form>
+
+        <h1>Mi primer heading</h1>
+        <h2>Mi segundo heading</h2>
+        <h3>Mi 3ro heading</h3>
+        <h4>Mi cuarto heading</h4>
+        <h5>Mi quinto heading</h5>
+        <h6>SIGAN VIENDO</h6>
+        <hr>
+        <h2 id="titulo">Chanchito felipe</h2>
+        <p>
+            Este texto es mucho mas largo<span style="color:rgb(88, 88, 163)" class="headline">y para mostrar</span>
+            <br>
+            la etiqueta <span style="color:rgb(187, 99, 99)">span</span>
+        </p>
+        <a target="_blank" href="https:www.google.com">ir a google pa'</a>
+
+
+        <!-- <script type="module" src="Advent.js/dayToXmas.js"></script> -->
+        <!-- <script type="module" src="Advent.js/app.js"></script> -->
+
+        <footer>
+            <p>
+                <a href="#titulo" class="cone">Ir al commienzo</a>
+                <a href="mailto:dhardi@cincinnatus.edu.do" class="cone">Contáctame Aquí</a>
+                <a target="_blank" href="https:www.google.com" class="cone">ir a google pa'</a>
+            </p>
+            <p>Copyright 2025, ®Cincinnatus, dhardi@cincinnatus.edu.do</p>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script>
+            ScrollReveal({ reset: true });
+        </script>
+
+        <script src="index.js"></script>
+
+        <script src="pruebas javscript/13- Async Wait.js"></script>
+    </div>
+
+</body>
+
+</html>

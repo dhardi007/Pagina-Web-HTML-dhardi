@@ -5,8 +5,8 @@
 function esperarUnSegundo() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve("¡Pasó 1 segundo!");
-    }, 1000);
+      resolve("¡Pasó 3 segundo!");
+    }, 3000);
   });
 }
 
